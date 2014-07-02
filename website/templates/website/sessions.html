@@ -1,0 +1,21 @@
+{% extends "website/home.html"%}
+
+{% block content %}
+
+{% load staticfiles %}
+{{MEDIA_ROOT}}
+<div id="video-carousel" class="owl-carousel">
+	{%for session in sessions %}
+	<div class="item">
+		<div class="img-wrap">
+			<a class="youtube-player" href="{{session.video_url}}"><img src="{{MEDIA_URL}}{{session.image}}"></a>
+			<a class="youtube-player" href="{{session.video_url}}"><p class="session-title">{{session.title}}</p></a>
+			<a class="youtube-player" href="{{session.video_url}}"><p class="session-subtitle">{{session.subtitle}}</p></a>
+		</div>
+	</div>
+
+	{% endfor %}
+
+</div>
+
+{% endblock %}

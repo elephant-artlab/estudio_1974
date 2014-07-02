@@ -1,0 +1,5 @@
+*.pyc
+*.pyo
+*.db
+media/uploads/*
+db.sqlite3

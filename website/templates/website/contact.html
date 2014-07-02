@@ -1,0 +1,61 @@
+{% extends "website/home.html"%}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<div id="contact"></div>
+<div id="contact-form">
+	<h1>Contáctanos</h1>
+	<form method="POST">
+		{% csrf_token %}
+
+		<table>
+			<tr>
+				<td align="right">Nombre</td>
+				<td align="left">{{form.name}}<span>{{form.name.errors.as_text | cut:"*"}}</span></td>
+			</tr>
+			<tr>
+				<td align="right">Email</td>
+				<td align="left">{{form.email}}<span>{{form.email.errors.as_text | cut:"*"}}</span></td>
+			</tr>
+			<tr>
+				<td id="message-label" align="right">Mensaje</td>
+				<td align="left">{{form.message}}<span>{{form.message.errors.as_text | cut:"*" }}</span></td>
+			</tr>
+		</table>
+		<button class="send">ENVIAR</button>
+		<div id="message-notification">
+			{% if data_entered and message_sent %}
+			<label id="sentMessage">Tu mensaje ha sido enviado.</label>
+			{% elif data_entered and not message_sent %}
+			<label id="sentMessage">Tu mensaje no se pudo enviar.</label>
+			{% endif %}
+		</div>
+	</form>
+</div>
+
+<div id="location"></div>
+<div id="location-info">
+	<div id="address">
+		<p>Av. Canal de Miramontes (Eje 1 Oriente) 1974. Col. Educación. <br>
+		Delegación Coyoacán. México, Distrito Federal. <br>
+		Email: contacto@estudio1974.com </p>
+	</div>
+	<div id="map">
+		<iframe width="600" height="340" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Eje%201%20Oriente%201974%2C%20Educaci%C3%B3n%2C%20Coyoac%C3%A1n%2C%20Mexico%20City%2C%20Mexico&key=AIzaSyBmSIBxHaG6rXRTlh1iWzzJgHttSiJyH6w"></iframe>	
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$( "#sentMessage" ).delay(5000).fadeOut();
+
+
+});
+
+
+</script>
+
+{% endblock %}

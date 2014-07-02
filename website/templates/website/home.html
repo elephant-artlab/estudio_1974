@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+	<title>Estudio 1974</title>	
+	{% load staticfiles %}
+
+	<link rel="shortcut icon" href="{% static 'website/images/favicon.ico' %}" type="image/x-icon">
+	<link rel="icon" href="{% static 'website/images/favicon.ico' %}" type="image/x-icon">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="{% static 'website/css/nivo-lightbox.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'website/css/default/default.css' %}" type="text/css" />
+	<script src="{% static 'website/js/nivo-lightbox.min.js' %}"></script>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/estudio_1974.css' %}" />
+
+	<!--*******************************************************************-->
+	<!-- CAROUSEL -->
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="{% static 'website/css/owl.carousel.css' %}">
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="{% static 'website/css/owl.theme.css' %}">
+	<!-- Include js plugin -->
+	<script src="{% static 'website/js/owl.carousel.js' %}"></script>
+	<!--*******************************************************************-->
+
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="body">
+			<div id="header-logo">
+				<a href="/home/"><img src="{% static 'website/images/logo.png' %}" alt="" /></a>
+			</div>
+			<div id="header"></div>
+
+			<div id="menu-background"></div>
+			<div id="menu">
+				<table>
+					<tr>
+						<td><a href="/about/">NOSOTROS</a></td>
+						<td><a href="/sessions/">SESIONES</a></td>
+						<td><a href="/contact/">CONTACTO</a></td>
+					</tr>
+				</table>
+			</div>
+
+			
+			{% block content %}
+
+			{% endblock %}
+		</div>
+
+		<div id="footer">
+			<div class="footer-text">
+				<div class="footer-logo">
+					<img src="{% static 'website/images/logo.png' %}" height="40">
+				</div>
+				<div class="footer-social">
+					<table>
+						<tr>
+							<td><a href="https://www.facebook.com/Estudio1974" target="_blank"><img src="{% static 'website/images/social/f1.png' %}" height="45" width="45"></a></td>
+							<td><a href="" target="_blank"><img src="{% static 'website/images/social/f2.png' %}" height="45" width="45"></a></td>
+							<td><a href="" target="_blank"><img src="{% static 'website/images/social/f6.png' %}" height="45" width="45"></a></td>
+							<td><a href="" target="_blank"><img src="{% static 'website/images/social/f3.png' %}" height="45" width="45"></a></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="footer-elephant">
+					<img src="{% static 'website/images/elephant_logo.png' %}" height="35">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script>
+
+	$(document).ready(function() {
+
+		$('.youtube-player').nivoLightbox({
+			theme: 'default', 
+		});
+
+		$("#video-carousel").owlCarousel({
+
+			autoPlay: false, //Set AutoPlay to 3 seconds
+			mouseDrag: true,
+			items : 4,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3]
+
+		});
+
+
+	});
+
+	</script>
+
+
+</body>
+</html>
