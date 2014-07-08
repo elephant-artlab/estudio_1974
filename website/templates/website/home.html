@@ -84,7 +84,8 @@
 	$(document).ready(function() {
 
 		DJANGO_MEDIA_URL = '{{ MEDIA_URL }}';
-		WEBSITE_URL = 'http://127.0.0.1:8000/';
+		WEBSITE_DOMAIN = 'http://estudio1974.com';
+		WEBSITE_SUBDOMAIN = 'http://www.estudio1974.com'
 
 		$('.youtube-player').nivoLightbox({
 			theme: 'default', 
@@ -105,16 +106,16 @@
 		console.log(document.URL)
 		var images = ['background_7.jpg', 'background_2.jpg', 'background_5.jpg', 'background_4.jpg'];
 		var current_url = document.URL;
-		if (current_url == (WEBSITE_URL + 'home/') || current_url == WEBSITE_URL){
+		if (current_url == (WEBSITE_DOMAIN + '/home/') || current_url == WEBSITE_DOMAIN){
 			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[0] + ')'});
 		}
-		else if (current_url == (WEBSITE_URL + 'about/')){
+		else if (current_url == (WEBSITE_DOMAIN + '/about/')){
 			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[1] + ')'});
 		}
-		else if (current_url == (WEBSITE_URL + 'sessions/')){
+		else if (current_url == (WEBSITE_DOMAIN + '/sessions/')){
 			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[2] + ')'});
 		}
-		else if (current_url == (WEBSITE_URL + 'contact/')){
+		else if (current_url == (WEBSITE_DOMAIN + '/contact/')){
 			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[3] + ')'});
 		}
 
