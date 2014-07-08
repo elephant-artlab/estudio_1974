@@ -64,7 +64,7 @@
 					<table>
 						<tr>
 							<td><a href="https://www.facebook.com/Estudio1974" target="_blank"><img src="{% static 'website/images/social/f1.png' %}" height="45" width="45"></a></td>
-							<td><a href="" target="_blank"><img src="{% static 'website/images/social/f2.png' %}" height="45" width="45"></a></td>
+							<td><a href="https://twitter.com/Estudio1974" target="_blank"><img src="{% static 'website/images/social/f2.png' %}" height="45" width="45"></a></td>
 							<td><a href="" target="_blank"><img src="{% static 'website/images/social/f6.png' %}" height="45" width="45"></a></td>
 							<td><a href="" target="_blank"><img src="{% static 'website/images/social/f3.png' %}" height="45" width="45"></a></td>
 						</tr>
@@ -72,7 +72,7 @@
 				</div>
 
 				<div class="footer-elephant">
-					<img src="{% static 'website/images/elephant_logo.png' %}" height="35">
+					<a href="http://www.elephant-artlab.com" target="_blank"><img src="{% static 'website/images/elephant_logo.png' %}" height="35"></a>
 				</div>
 			</div>
 			
@@ -82,6 +82,9 @@
 	<script>
 
 	$(document).ready(function() {
+
+		DJANGO_MEDIA_URL = '{{ MEDIA_URL }}';
+		WEBSITE_URL = 'http://127.0.0.1:8000/';
 
 		$('.youtube-player').nivoLightbox({
 			theme: 'default', 
@@ -93,9 +96,27 @@
 			mouseDrag: true,
 			items : 4,
 			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3]
+			itemsDesktopSmall : [979,3],
+			itemsTablet: [768,2],
+			itemsMobile: [479,1],
 
 		});
+
+		console.log(document.URL)
+		var images = ['background_7.jpg', 'background_2.jpg', 'background_5.jpg', 'background_4.jpg'];
+		var current_url = document.URL;
+		if (current_url == (WEBSITE_URL + 'home/') || current_url == WEBSITE_URL){
+			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[0] + ')'});
+		}
+		else if (current_url == (WEBSITE_URL + 'about/')){
+			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[1] + ')'});
+		}
+		else if (current_url == (WEBSITE_URL + 'sessions/')){
+			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[2] + ')'});
+		}
+		else if (current_url == (WEBSITE_URL + 'contact/')){
+			$('#container').css({'background-image': 'url(' + DJANGO_MEDIA_URL + 'background_images/' + images[3] + ')'});
+		}
 
 
 	});

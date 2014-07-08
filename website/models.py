@@ -6,7 +6,7 @@ from django.db.models.signals import pre_delete
 # Create your models here.
 class Session(models.Model):
 	title = models.CharField(max_length=17, null=False, blank=False)
-	subtitle = models.CharField(max_length=32, null=False, blank=False)
+	subtitle = models.CharField(max_length=29, null=False, blank=False)
 	video_url = models.URLField(blank=True, null=True)
 	image = models.ImageField(upload_to="uploads", blank=True, null=True)
 	created_at = models.DateTimeField(auto_now_add=True)

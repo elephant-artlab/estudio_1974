@@ -1,9 +1,5 @@
 html { 
-	background: url('../images/background_7.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-color: black;
 }
 @font-face {
 	font-family: 'coolvetica';
@@ -25,12 +21,16 @@ h1, h2 {
 	font-family: 'coolvetica', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 }
-p {
+p, label {
 	font-family: 'coolvetica', Arial, Helvetica, sans-serif;
 }
 #container {
 	min-height: 100%;
 	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 #body {
 	height: 730px;
@@ -43,7 +43,7 @@ p {
 	height: 130px;
 	width: 320px;
 	background-color: #daff0d;
-	opacity: 0.7;
+	opacity: 0.8;
 	z-index: 1;
 }
 #header-logo {
@@ -63,7 +63,7 @@ p {
 	height: 40px;
 	width: 600px;
 	background-color: #daff0d;
-	opacity: 0.7;
+	opacity: 0.8;
 	z-index: 1;
 }
 #menu {
@@ -125,20 +125,20 @@ p {
 #video-carousel {
 	position: absolute;
 	top: 360px;
+	margin-left: -5px;
 }
 #video-carousel .item{
 	margin-left: 20px;
 }
 #video-carousel .item img{
-	width: 303px;
-	height: 202px;
+	width: 288px;
+	height: 180px;
 	display: block;
 	border: solid rgba(218, 255, 13, 0.7) 3px;
 }
-
 .img-wrap {
-	width: 309px;
-	height: 208px;
+	width: 294px;
+	height: 186px;
 	position: relative;
 	background: black;
 	line-height: 0;
@@ -146,12 +146,12 @@ p {
 .session-title{
 	text-align: right;
 	left: 10px;
-	top: 125px;
+	top: 115px;
 	font-size: 28px;
 }
 .session-subtitle {
 	left: 10px;
-	top: 158px;
+	top: 150px;
 	font-size: 20px;
 }
 .img-wrap p {
@@ -173,6 +173,21 @@ p {
 	transition-duration: 1s;
 	/*Safari*/
 	-webkit-transition-duration: 1s;
+}
+#coming-soon {
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	top: 360px;
+	left: 50%;
+	margin-left: -125px;
+	background-color: black;
+	opacity: 0.7;
+	width: 250px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	border: solid rgba(218, 255, 13, 0.7) 3px;
 }
 
 #about {
