@@ -92,12 +92,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR + '/media/'
-# MEDIA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '../../media/').replace('\\','/'))
+MEDIA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '../../media/').replace('\\','/'))
 STATIC_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '../../static/').replace('\\','/'))
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'elephant.art.lab@gmail.com'
-EMAIL_HOST_PASSWORD = 'Elephant=2014'
+EMAIL_HOST = 'smtp.webfaction.com'
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass

@@ -132,13 +132,13 @@ p, label {
 }
 #video-carousel .item img{
 	width: 288px;
-	height: 180px;
+	height: 197px;
 	display: block;
 	border: solid rgba(218, 255, 13, 0.7) 3px;
 }
 .img-wrap {
 	width: 294px;
-	height: 186px;
+	height: 203px;
 	position: relative;
 	background: black;
 	line-height: 0;
