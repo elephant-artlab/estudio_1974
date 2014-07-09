@@ -18,11 +18,11 @@ body {
 	margin: 0;
 }
 h1, h2 {
-	font-family: 'coolvetica', Arial, Helvetica, sans-serif;
+	/*font-family: 'coolvetica', Arial, Helvetica, sans-serif;*/
 	font-size: 20px;
 }
 p, label {
-	font-family: 'coolvetica', Arial, Helvetica, sans-serif;
+	/*font-family: 'coolvetica', Arial, Helvetica, sans-serif;*/
 }
 #container {
 	min-height: 100%;
