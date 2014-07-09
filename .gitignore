@@ -2,6 +2,7 @@
 *.pyo
 *.db
 media/uploads/*
+media/background_images/*
 db.sqlite3
 local_settings.py
 httpd.conf
