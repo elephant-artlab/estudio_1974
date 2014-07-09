@@ -155,7 +155,7 @@ p, label {
 	font-size: 20px;
 }
 .img-wrap p {
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	z-index: 100;
 	position: absolute;    
 	color: white;
@@ -220,7 +220,7 @@ p, label {
 }
 
 #contact {
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	position: absolute;
 	top: 330px;
 	left: 0;
@@ -237,7 +237,7 @@ p, label {
 #contact-form {
 	position: absolute;
 	color: white;
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	font-size: 16px;
 	padding: 10px;
 	top: 320px;
@@ -254,7 +254,7 @@ p, label {
 	color: #daff0d;
 }
 #contact-form span {
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	color: #daff0d;
 	font-size: 14px;
 	padding-left: 5px;
@@ -283,7 +283,7 @@ p, label {
 	cursor: pointer;
 	background-color: rgba(218, 255, 13, 0.75);
 	border: none;
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	color: black;
 	font-size: 16px;
 	width: 66px;
@@ -332,7 +332,7 @@ p, label {
 		z-index: 0;
 	}
 	#location-info {
-		font-family: 'coolvetica', Arial, Helvetica;
+		/*font-family: 'coolvetica', Arial, Helvetica;*/
 		color: white;
 		position: absolute;
 		margin-left: 5px;
