@@ -73,7 +73,7 @@ p, label {
 	z-index: 2;
 }
 #menu table {
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	font-size: 20px;
 	padding-top: 5px;
 	border-spacing: 80px 2px;
@@ -308,7 +308,7 @@ p, label {
 	z-index: 0;
 }
 #location-info {
-	font-family: 'coolvetica', Arial, Helvetica;
+	/*font-family: 'coolvetica', Arial, Helvetica;*/
 	color: white;
 	position: relative;
 	float: right;
