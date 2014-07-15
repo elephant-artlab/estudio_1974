@@ -7,7 +7,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('website.views',
-	url(r'^$', 'home_view'),
+	url(r'^$', 'about_view'),
 	url(r'^home', 'home_view'),
 	url(r'^about', 'about_view'),
 	url(r'^sessions', 'sessions_view'),
