@@ -3,6 +3,9 @@
 {% block content %}
 
 {% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/sessions.css' %}" />
+
 	{% if sessions %}
 	<div id="video-carousel" class="owl-carousel">
 	{%for session in sessions %}
