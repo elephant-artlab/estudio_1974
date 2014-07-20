@@ -321,12 +321,12 @@ p, label {
 		margin-bottom: 80px;
 		top: 740px;
 		height: 430px;
-		width: 99%;
-		max-width: 650px;
+		width: 100%;
 		background-color: black;
 		opacity: 0.8;
 		border: solid rgba(218, 255, 13, 0.75) 3px;
 		border-left: black;
+		border-right: black;
 		z-index: 0;
 	}
 	#location-info {
