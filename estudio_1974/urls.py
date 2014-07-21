@@ -1,12 +1,12 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.contrib import admin
-from .sitemap import StaticSitemap
+from website.sitemap import StaticSitemap
 
 admin.autodiscover()
 
 sitemaps = {
-'sitemap': StaticSitemap
+'sitemap': StaticSitemap,
 }
 
 urlpatterns = patterns('',

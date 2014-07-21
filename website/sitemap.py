@@ -1,7 +1,7 @@
 from django.contrib import sitemaps
 from django.core.urlresolvers import reverse
 
-class Sitemap(sitemaps.Sitemap):
+class StaticSitemap(sitemaps.Sitemap):
     changefreq = "never"
     priority = 0.5
 
