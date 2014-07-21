@@ -5,4 +5,5 @@ media/uploads/*
 media/background_images/*
 db.sqlite3
 local_settings.py
+dev_settings.py
 httpd.conf
