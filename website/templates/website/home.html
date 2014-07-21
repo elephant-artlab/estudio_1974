@@ -2,7 +2,8 @@
 <html>
 
 <head>
-	<title>Estudio 1974</title>	
+	<title>Estudio 1974</title>
+	<meta name="description=" content="Bienvenidos a Estudio 1974, somos un estudio de grabación, mezcla y masterización de audio, situado al sur de la Ciudad de México. Contamos con un espacio acústico óptimo para desarrollar proyectos de alta calidad y brindar soluciones para bandas a todos niveles que buscan la producción de material musical.">
 	{% load staticfiles %}
 
 	<link rel="shortcut icon" href="{% static 'website/images/favicon.ico' %}" type="image/x-icon">
@@ -41,11 +42,11 @@
 
 <body>
 
-	<div id="container">
+	<div itemscope itemtype="http://schema.org/LocalBusiness" id="container">
 
-		<div id="body">
+		<div itemscope itemtype="http://schema.org/LocalBusiness" id="body">
 			<div id="header-logo">
-				<a href="/home/"><img src="{% static 'website/images/logo.png' %}" alt="" /></a>
+				<a href="/home/"><img itemprop="image" src="{% static 'website/images/logo.png' %}" alt="" /></a>
 			</div>
 			<div id="header"></div>
 
@@ -87,6 +88,7 @@
 				<a href="http://www.elephant-artlab.com" target="_blank"><img src="{% static 'website/images/elephant_logo.png' %}" height="35"></a>
 			</div>
 		</div>
+		<meta itemprop="email" content="contacto@estudio1974.com">
 	</div>
 
 	<script>
