@@ -11,12 +11,9 @@ class Sitemap(sitemaps.Sitemap):
     def items(self):
         items = (
                 reverse('index'),
-                reverse('realstate'),
-                reverse('products-all'),
-                reverse('products-new'),
-                reverse('promotions'),
-                reverse('highlight'),
-                reverse('cart-list'),
+                reverse('home'),
+                reverse('about'),
+                reverse('sessions'),
                 reverse('contact'),
             )
         return items
