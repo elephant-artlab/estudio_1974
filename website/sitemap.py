@@ -5,9 +5,6 @@ class StaticSitemap(sitemaps.Sitemap):
     changefreq = "never"
     priority = 0.5
 
-    def __init__(self, names):
-        self.names = names
-
     def items(self):
         items = (
                 reverse('index'),
