@@ -40,6 +40,7 @@ p, label {
 	height: 130px;
 	width: 320px;
 	background-color: #daff0d;
+	color: #daff0d;
 	opacity: 0.8;
 	z-index: 1;
 }
